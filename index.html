@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fff7fb">
+  <meta name="description" content="CicloEla — acompanhamento privado de ciclo menstrual, humor e bem-estar.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>CicloEla</title>
+</head>
+<body>
+  <header class="top"><div><small>Seu bem-estar, no seu ritmo</small><h1>CicloEla</h1></div><button id="privacy">🔒</button></header>
+  <main id="app"></main>
+  <nav>
+    <button data-view="today" class="active">☀️<span>Hoje</span></button>
+    <button data-view="calendar">🗓️<span>Calendário</span></button>
+    <button data-view="insights">✨<span>Insights</span></button>
+    <button data-view="settings">⚙️<span>Ajustes</span></button>
+  </nav>
+  <dialog id="privacyDialog"><div class="modal"><h2>Privacidade</h2><p>Os registros ficam somente neste navegador. O GitHub hospeda apenas o código do aplicativo.</p><p class="muted">As previsões são aproximadas e não substituem avaliação médica, diagnóstico ou método contraceptivo.</p><button id="closePrivacy" class="primary">Entendi</button></div></dialog>
+  <script src="app.js" defer></script>
+</body>
+</html>
